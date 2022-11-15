@@ -46,6 +46,9 @@
 #img{
   transform: translate(30px, -132px);
 }
+.border-brand{
+  border-color: #19D3AE;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -9,6 +9,12 @@ import cavity from '../../assets/images/cavity.png';
 import whitening from '../../assets/images/whitening.png';
 import treatment from '../../assets/images/treatment.png';
 import doctor from '../../assets/images/doctor.png';
+import people1 from '../../assets/images/people1.png';
+import people2 from '../../assets/images/people2.png';
+import people3 from '../../assets/images/people3.png';
+import quote from '../../assets/icons/quote.svg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { A11y, Navigation, Pagination, Scrollbar } from 'swiper';
 
 
 const Home = () => {
@@ -113,6 +119,86 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+            </section>
+            <section className='container mt-5'>
+                <div className="text-start row align-items-center justify-content-between">
+                    <div className="col-7">
+                        <h6 className='text-brand'>Testimonial</h6>
+                        <h2 className='text-semi fw-bolder'>What Our Patients Says</h2>
+                    </div>
+                    <div className="col-5 text-end">
+                        <img height={156} width={192} src={quote} alt="" />
+                    </div>
+                </div>
+            </section>
+            {/* review swiper  */}
+            <section className='container'>
+            <Swiper className='p-3 pb-5'
+                modules={[Navigation, Scrollbar, Pagination, A11y]}
+                spaceBetween={50}
+                slidesPerView={3}
+                navigation
+                pagination={{ clickable: true }}
+                scrollbar={{ draggable: true }}
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log('slide change')}
+                >
+                <SwiperSlide>
+                    <div className="shadow py-3 px-4 rounded">
+                        <p className='text-semi'>
+                        It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribute to using Content here, content
+                        </p>
+                        <div className="d-flex text-start">
+                            <img className='border border-info rounded-5 border-3' height={50} src={people1} alt="" />
+                            <div className="ps-2">
+                                <h5 className='text-brand mb-0'>Winson Herry</h5>
+                                <p className='m-0'>California</p>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="shadow py-3 px-4 rounded">
+                        <p className='text-semi'>
+                        It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribute to using Content here, content
+                        </p>
+                        <div className="d-flex text-start">
+                            <img className='border border-info rounded-5 border-3' height={50} src={people2} alt="" />
+                            <div className="ps-2">
+                                <h5 className='text-brand mb-0'>Winson Herry</h5>
+                                <p className='m-0'>California</p>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="shadow py-3 px-4 rounded">
+                        <p className='text-semi'>
+                        It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribute to using Content here, content
+                        </p>
+                        <div className="d-flex text-start">
+                            <img className='border border-info rounded-5 border-3' height={50} src={people3} alt="" />
+                            <div className="ps-2">
+                                <h5 className='text-brand mb-0'>Winson Herry</h5>
+                                <p className='m-0'>California</p>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="shadow py-3 px-4 rounded">
+                        <p className='text-semi'>
+                        It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribute to using Content here, content
+                        </p>
+                        <div className="d-flex text-start">
+                            <img className='border border-info rounded-5 border-3' height={50} src={people1} alt="" />
+                            <div className="ps-2">
+                                <h5 className='text-brand mb-0'>Winson Herry</h5>
+                                <p className='m-0'>California</p>
+                            </div>
+                        </div>
+                    </div></SwiperSlide>
+            </Swiper>
             </section>
         </div>
     );
