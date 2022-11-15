@@ -49,6 +49,12 @@
 .border-brand{
   border-color: #19D3AE;
 }
+.contact{
+  background-image: url('/src/assets/images/appointment.png');
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

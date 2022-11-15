@@ -15,6 +15,7 @@ import people3 from '../../assets/images/people3.png';
 import quote from '../../assets/icons/quote.svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { A11y, Navigation, Pagination, Scrollbar } from 'swiper';
+import { Button, Form } from 'react-bootstrap';
 
 
 const Home = () => {
@@ -199,6 +200,31 @@ const Home = () => {
                         </div>
                     </div></SwiperSlide>
             </Swiper>
+            </section>
+            {/* contact us section  */}
+            <section>
+                <div className="contact mt-5 p-5">
+                    <h6 className='text-brand fw-bolder'>Connect Us</h6>
+                    <h3 className='text-light'>Stay connected with us</h3>
+                    <div className='w-75 m-auto'>
+                    <Form className='w-50 mt-4 m-auto'>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Control type="email" placeholder="Enter Address" />
+                        </Form.Group>
+
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Control type="text" placeholder="Subject" />
+                        </Form.Group>
+
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Control as="textarea" rows={3} type="text" placeholder="Your message" />
+                        </Form.Group>
+                        <Button className='btn bg-grad border-0' type="submit">
+                            Submit
+                        </Button>
+                    </Form>
+                    </div>
+                </div>
             </section>
         </div>
     );
