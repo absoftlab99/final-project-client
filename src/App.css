@@ -15,18 +15,37 @@
   color: white !important;
   border-radius: 5px !important;
 }
+.text-brand{
+  color: #19D3AE;
+}
+.text-semi{
+  color: #3A4256;
+}
 .ff-open{
   font-family: 'Open Sans', sans-serif;
 }
-.bg-gradient{
-  background: rgb(25,211,174);
-  background: linear-gradient(90deg, rgba(25,211,174,1) 0%, rgba(15,207,236,1) 50%);
-}
-
 .bg-original{
-  background: #3A4256;
+  background-color: #3A4256;
+}
+.bg-grad{
+  background: linear-gradient(90deg, #19D3AE -22.5%, #0FCFEC 120.83%);
 }
 
+.banner{
+  background-image: url('./assets//images/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.appointment{
+  background-image: url('/src/assets/images/appointment.png');
+  height: 533px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#img{
+  transform: translate(30px, -132px);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
